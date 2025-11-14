@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Paula . Contactos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Paula · Contacto</title>
+  <link rel ="stylesheet" href="estilos.css">
 </head>
+
 <body>
- <nav>
-       <ul> 
-        <li><a href="index.html">Inicio</a></li>
-            <li><a href="estudios.html">Estudios</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contactos</a></li>
-        <ul> 
-    <nav>
-    <main> 
-      <h1>Contáctos</h1>
-      <p>Si deseas contactarte conmigo, puedes hacerlo a través de:
-        <p>📧 Correo: emiliapao2004@gmail.com </p>
-        <p> Instagram: @paulaa.e19</p>
-        <p>Teléfono: 0999898967</p>
-      <footer>
-    <br>2025 Blog de Paula 💜</br>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="estudios.html">Estudios</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html" class="activo">Contactos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Contáctame</h1>
+    <p class="intro-contacto">
+      Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:
+    </p>
+
+    <section class="contact-info">
+      <p>📧 <strong>Correo:</strong> <a href="mailto:emiliapao2004@gmail.com">emiliapao2004@gmail.com</a></p>
+      <p>📱 <strong>Teléfono:</strong> <a href="tel:+593999898967">0999898967</a></p>
+      <p>📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/paulaa.e19" target="_blank">@paulaa.e19</a></p>
+    </section>
+
+    <section class="formulario-contacto">
+      <h2>O envíame un mensaje directo:</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>💜 2025 Blog de Paula 💜</p>
   </footer>
-    
-</body>
+ </body>
 </html>
